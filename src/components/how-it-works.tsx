@@ -1,27 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-
-const steps = [
-  {
-    number: "01",
-    title: "Non-profits pitch",
-    description:
-      "Organizations share real challenges they face — from streamlining operations to reaching more people.",
-  },
-  {
-    number: "02",
-    title: "Builders team up",
-    description:
-      "Developers, designers, and product people form teams around the problems that resonate with them.",
-  },
-  {
-    number: "03",
-    title: "Ship solutions",
-    description:
-      "In one intense build day, teams create working prototypes that non-profits can actually use.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const container = {
   hidden: {},
@@ -42,6 +22,26 @@ const fadeUp = {
 } as const;
 
 export function HowItWorks() {
+  const t = useTranslations("HowItWorks");
+
+  const steps = [
+    {
+      number: t("step1.number"),
+      title: t("step1.title"),
+      description: t("step1.description"),
+    },
+    {
+      number: t("step2.number"),
+      title: t("step2.title"),
+      description: t("step2.description"),
+    },
+    {
+      number: t("step3.number"),
+      title: t("step3.title"),
+      description: t("step3.description"),
+    },
+  ];
+
   return (
     <section id="how-it-works" className="py-24 sm:py-32">
       <div className="max-w-6xl mx-auto px-6">
@@ -53,10 +53,10 @@ export function HowItWorks() {
           className="mb-16"
         >
           <p className="text-xs uppercase tracking-widest text-accent mb-3">
-            How it works
+            {t("eyebrow")}
           </p>
           <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
-            Three steps to impact
+            {t("title")}
           </h2>
         </motion.div>
 

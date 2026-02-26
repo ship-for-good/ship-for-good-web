@@ -1,10 +1,13 @@
 "use client";
 
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 const SPONSOR_EMAIL = "mailto:hello@shipforgood.dev";
 
 export function Sponsors() {
+  const t = useTranslations("Sponsors");
+
   return (
     <section className="py-24 sm:py-32 bg-background-alt">
       <div className="max-w-6xl mx-auto px-6">
@@ -16,14 +19,13 @@ export function Sponsors() {
           className="text-center"
         >
           <p className="text-xs uppercase tracking-widest text-accent mb-3">
-            Partners
+            {t("eyebrow")}
           </p>
           <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight mb-6">
-            Backed by people who care
+            {t("title")}
           </h2>
           <p className="text-foreground-muted max-w-xl mx-auto mb-16">
-            We&apos;re looking for sponsors and partners who want to support
-            non-profits and the builder community in Barcelona.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -39,7 +41,7 @@ export function Sponsors() {
               key={i}
               className="h-24 border border-dashed border-border rounded-xl flex items-center justify-center text-sm text-foreground-muted"
             >
-              Your logo here
+              {t("logoPlaceholder")}
             </div>
           ))}
         </motion.div>
@@ -55,7 +57,7 @@ export function Sponsors() {
             href={SPONSOR_EMAIL}
             className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors"
           >
-            Interested in sponsoring?
+            {t("cta")}
             <span aria-hidden="true">→</span>
           </a>
         </motion.div>

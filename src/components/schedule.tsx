@@ -1,36 +1,39 @@
 "use client";
 
 import { motion } from "motion/react";
-
-const days = [
-  {
-    date: "April 17",
-    label: "Thursday Evening",
-    title: "The Introduction",
-    items: [
-      { time: "18:00", event: "Doors open & networking" },
-      { time: "18:30", event: "Welcome & hackathon overview" },
-      { time: "19:00", event: "Non-profits pitch their challenges" },
-      { time: "20:00", event: "Team formation & planning" },
-      { time: "21:00", event: "Closing & social" },
-    ],
-  },
-  {
-    date: "April 18",
-    label: "Friday Full Day",
-    title: "The Build Day",
-    items: [
-      { time: "09:00", event: "Doors open & breakfast" },
-      { time: "09:30", event: "Kick-off & hacking begins" },
-      { time: "13:00", event: "Lunch & mentor check-ins" },
-      { time: "16:00", event: "Final sprint & polish" },
-      { time: "17:30", event: "Demos & presentations" },
-      { time: "19:00", event: "Awards & celebration" },
-    ],
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function Schedule() {
+  const t = useTranslations("Schedule");
+
+  const days = [
+    {
+      date: t("day1.date"),
+      label: t("day1.label"),
+      title: t("day1.title"),
+      items: [
+        { time: t("day1.item1.time"), event: t("day1.item1.event") },
+        { time: t("day1.item2.time"), event: t("day1.item2.event") },
+        { time: t("day1.item3.time"), event: t("day1.item3.event") },
+        { time: t("day1.item4.time"), event: t("day1.item4.event") },
+        { time: t("day1.item5.time"), event: t("day1.item5.event") },
+      ],
+    },
+    {
+      date: t("day2.date"),
+      label: t("day2.label"),
+      title: t("day2.title"),
+      items: [
+        { time: t("day2.item1.time"), event: t("day2.item1.event") },
+        { time: t("day2.item2.time"), event: t("day2.item2.event") },
+        { time: t("day2.item3.time"), event: t("day2.item3.event") },
+        { time: t("day2.item4.time"), event: t("day2.item4.event") },
+        { time: t("day2.item5.time"), event: t("day2.item5.event") },
+        { time: t("day2.item6.time"), event: t("day2.item6.event") },
+      ],
+    },
+  ];
+
   return (
     <section id="schedule" className="py-24 sm:py-32 bg-background-alt">
       <div className="max-w-6xl mx-auto px-6">
@@ -42,10 +45,10 @@ export function Schedule() {
           className="mb-16"
         >
           <p className="text-xs uppercase tracking-widest text-accent mb-3">
-            Schedule
+            {t("eyebrow")}
           </p>
           <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
-            Two days, one mission
+            {t("title")}
           </h2>
         </motion.div>
 
@@ -62,9 +65,7 @@ export function Schedule() {
               <div className="flex items-baseline justify-between mb-6">
                 <div>
                   <h3 className="font-pixel text-3xl">{day.date}</h3>
-                  <p className="text-sm text-foreground-muted mt-1">
-                    {day.label}
-                  </p>
+                  <p className="text-sm text-foreground-muted mt-1">{day.label}</p>
                 </div>
                 <span className="text-xs uppercase tracking-widest text-accent font-medium">
                   {day.title}
@@ -74,7 +75,7 @@ export function Schedule() {
               <div className="space-y-0 divide-y divide-border">
                 {day.items.map((item) => (
                   <div
-                    key={item.time}
+                    key={`${day.date}-${item.time}`}
                     className="flex items-baseline gap-4 py-3.5"
                   >
                     <span className="text-sm font-mono text-foreground-muted w-14 shrink-0">

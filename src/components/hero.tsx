@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 const container = {
   hidden: {},
@@ -25,6 +26,8 @@ const LUMA_URL = "#";
 const MEETUP_URL = "#";
 
 export function Hero() {
+  const t = useTranslations("Hero");
+
   return (
     <section className="min-h-[90vh] flex items-center justify-center pt-16">
       <motion.div
@@ -36,7 +39,7 @@ export function Hero() {
         <motion.div variants={fadeUp} className="mb-8">
           <span className="inline-flex items-center gap-2 text-sm tracking-wide text-foreground-muted border border-border rounded-full px-4 py-1.5">
             <span className="w-1.5 h-1.5 bg-accent rounded-full" />
-            April 17–18, 2025 · Barcelona
+            {t("badge")}
           </span>
         </motion.div>
 
@@ -44,9 +47,9 @@ export function Hero() {
           variants={fadeUp}
           className="font-pixel text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight leading-[0.95] mb-8"
         >
-          Ship for{" "}
+          {t("titleStart")}{" "}
           <span className="relative inline-block">
-            Good
+            {t("titleHighlight")}
             <svg
               className="absolute -bottom-2 left-0 w-full"
               viewBox="0 0 200 12"
@@ -71,9 +74,7 @@ export function Hero() {
           variants={fadeUp}
           className="text-lg sm:text-xl text-foreground-muted max-w-2xl mx-auto leading-relaxed mb-12"
         >
-          A hackathon where builders help non-profits turn their ideas into
-          working solutions. Two days of real collaboration at{" "}
-          <span className="text-foreground">42 Barcelona</span>.
+          {t("description")}
         </motion.p>
 
         <motion.div
@@ -86,7 +87,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-accent-hover transition-colors"
           >
-            Register on Luma
+            {t("ctaLuma")}
             <span aria-hidden="true">→</span>
           </a>
           <a
@@ -95,7 +96,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:bg-background-alt transition-colors"
           >
-            Join on Meetup
+            {t("ctaMeetup")}
           </a>
         </motion.div>
       </motion.div>

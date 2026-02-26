@@ -1,10 +1,19 @@
 "use client";
 
+import { Link, usePathname } from "@/i18n/navigation";
+import { Locale } from "@/i18n/routing";
 import { motion } from "motion/react";
+import { useLocale, useTranslations } from "next-intl";
 
 const LUMA_URL = "#";
 
+const locales: Locale[] = ["es", "ca"];
+
 export function Navbar() {
+  const t = useTranslations("Navbar");
+  const locale = useLocale() as Locale;
+  const pathname = usePathname();
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: -10 }}
@@ -13,36 +22,58 @@ export function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border"
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-pixel text-xl tracking-tight">
-          Ship for Good
-        </a>
+        <Link href="/" className="font-pixel text-xl tracking-tight">
+          {t("brand")}
+        </Link>
 
         <div className="flex items-center gap-6">
           <a
             href="#schedule"
             className="text-sm text-foreground-muted hover:text-foreground transition-colors hidden sm:block"
           >
-            Schedule
+            {t("schedule")}
           </a>
           <a
             href="#how-it-works"
             className="text-sm text-foreground-muted hover:text-foreground transition-colors hidden sm:block"
           >
-            How it works
+            {t("howItWorks")}
           </a>
           <a
             href="#faq"
             className="text-sm text-foreground-muted hover:text-foreground transition-colors hidden sm:block"
           >
-            FAQ
+            {t("faq")}
           </a>
+
+          <div className="flex items-center rounded-full border border-border p-1">
+            {locales.map((switchLocale) => {
+              const isActive = locale === switchLocale;
+
+              return (
+                <Link
+                  key={switchLocale}
+                  href={pathname}
+                  locale={switchLocale}
+                  className={`rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
+                    isActive
+                      ? "bg-accent text-white"
+                      : "text-foreground-muted hover:text-foreground"
+                  }`}
+                >
+                  {t(`language.${switchLocale}`)}
+                </Link>
+              );
+            })}
+          </div>
+
           <a
             href={LUMA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium bg-accent text-white px-4 py-2 rounded-full hover:bg-accent-hover transition-colors"
           >
-            Register
+            {t("register")}
           </a>
         </div>
       </div>

@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "motion/react";
-
-const items = [
-  { label: "When", value: "April 17–18, 2025" },
-  { label: "Where", value: "42 Barcelona, Telefónica Building" },
-  { label: "Format", value: "1 evening intro + 1 full build day" },
-];
+import { useTranslations } from "next-intl";
 
 export function InfoBar() {
+  const t = useTranslations("InfoBar");
+
+  const items = [
+    { label: t("whenLabel"), value: t("whenValue") },
+    { label: t("whereLabel"), value: t("whereValue") },
+    { label: t("formatLabel"), value: t("formatValue") },
+  ];
+
   return (
     <motion.section
       initial={{ opacity: 0 }}

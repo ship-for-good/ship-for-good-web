@@ -1,45 +1,8 @@
 "use client";
 
+import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
-
-const faqs = [
-  {
-    question: "Who can participate?",
-    answer:
-      "Anyone who wants to help! Developers, designers, product managers, data scientists, marketers — if you have skills that can help a non-profit, you belong here. No previous hackathon experience required.",
-  },
-  {
-    question: "Do I need to be technical?",
-    answer:
-      "Not at all. While we need builders who can code, we equally need people with design, strategy, communication, and project management skills. Non-profits also participate by presenting their challenges and working with teams.",
-  },
-  {
-    question: "Is it free?",
-    answer:
-      "Yes, Ship for Good is completely free to attend. We provide the venue, food, drinks, and Wi-Fi. All we ask is that you bring your skills and enthusiasm.",
-  },
-  {
-    question: "Do I need to attend both days?",
-    answer:
-      "We strongly recommend attending both. April 17 (evening) is when non-profits pitch and teams form — it's essential context. April 18 is the full build day. If you can only make one day, prioritize the 18th.",
-  },
-  {
-    question: "What should I bring?",
-    answer:
-      "Your laptop, charger, and any tools you normally use to build. We'll have power strips, Wi-Fi, and monitors available. Optional: bring a sweater — AC can be cold.",
-  },
-  {
-    question: "What happens to the projects after the hackathon?",
-    answer:
-      "Our goal is to ship solutions that non-profits can actually use. Teams are encouraged to continue working with their non-profit after the event. We'll facilitate handoffs and follow-ups.",
-  },
-  {
-    question: "Where exactly is the venue?",
-    answer:
-      "42 Barcelona, located in the Telefónica Building in Barcelona. We'll share the exact address and directions closer to the event.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 function FAQItem({
   question,
@@ -89,7 +52,18 @@ function FAQItem({
 }
 
 export function FAQ() {
+  const t = useTranslations("FAQ");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs = [
+    { question: t("faq1.question"), answer: t("faq1.answer") },
+    { question: t("faq2.question"), answer: t("faq2.answer") },
+    { question: t("faq3.question"), answer: t("faq3.answer") },
+    { question: t("faq4.question"), answer: t("faq4.answer") },
+    { question: t("faq5.question"), answer: t("faq5.answer") },
+    { question: t("faq6.question"), answer: t("faq6.answer") },
+    { question: t("faq7.question"), answer: t("faq7.answer") },
+  ];
 
   return (
     <section id="faq" className="py-24 sm:py-32">
@@ -102,10 +76,10 @@ export function FAQ() {
           className="mb-16"
         >
           <p className="text-xs uppercase tracking-widest text-accent mb-3">
-            FAQ
+            {t("eyebrow")}
           </p>
           <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
-            Common questions
+            {t("title")}
           </h2>
         </motion.div>
 
@@ -118,13 +92,11 @@ export function FAQ() {
         >
           {faqs.map((faq, index) => (
             <FAQItem
-              key={index}
+              key={faq.question}
               question={faq.question}
               answer={faq.answer}
               isOpen={openIndex === index}
-              onToggle={() =>
-                setOpenIndex(openIndex === index ? null : index)
-              }
+              onToggle={() => setOpenIndex(openIndex === index ? null : index)}
             />
           ))}
         </motion.div>
