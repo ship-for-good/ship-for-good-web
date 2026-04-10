@@ -20,6 +20,10 @@ This is a **content and localization feature** with no database, API, or data st
 
 ```json
 {
+  "metadata": {
+    "title": "Ship For Good BCN — 1ª Edición",
+    "description": "Devs, Product Managers y Designers trabajando juntos para crear soluciones reales. 29–30 de mayo de 2026 en 42 Barcelona."
+  },
   "navbar": {
     "logo_alt": "Ship For Good",
     "language": "Idioma"
