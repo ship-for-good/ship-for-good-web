@@ -1,5 +1,6 @@
 "use client";
 
+import { asset } from "@/lib/asset";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
@@ -18,7 +19,7 @@ export function CivioSection() {
         >
           <div className="shrink-0">
             <img
-              src="/civio-logo.svg"
+              src={asset("/civio-logo.svg")}
               alt={t("logo_alt")}
               width={160}
               height={36}
