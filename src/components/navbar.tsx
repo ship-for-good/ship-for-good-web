@@ -1,5 +1,6 @@
 "use client";
 
+import { asset } from "@/lib/asset";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Locale } from "@/i18n/routing";
 import { motion } from "motion/react";
@@ -24,7 +25,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <img
-            src="/logo.svg"
+            src={asset("/logo.svg")}
             alt={t("logo_alt")}
             height={36}
             style={{ height: "36px", width: "auto" }}
