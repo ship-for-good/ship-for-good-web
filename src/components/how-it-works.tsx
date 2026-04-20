@@ -84,9 +84,10 @@ export function HowItWorks() {
           <h3 className="font-pixel text-2xl sm:text-3xl tracking-tight mb-4">
             {t("who_title")}
           </h3>
-          <p className="text-sm text-foreground-muted leading-relaxed max-w-2xl">
-            {t("who_description")}
-          </p>
+          <div className="text-sm text-foreground-muted leading-relaxed">
+            <p className="max-w-4xl">{t("who_description")}</p>
+            <p className="mt-2">{t("who_tagline")}</p>
+          </div>
         </motion.div>
       </div>
     </section>

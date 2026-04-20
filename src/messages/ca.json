@@ -45,7 +45,11 @@
     "title": "Partner: Fundació Civio",
     "description": "<civio>Fundació Civio</civio> és una fundació independent que vetlla pel poder públic, combat l'opacitat institucional i utilitza el periodisme, la tecnologia i les dades obertes per donar als ciutadans accés a la informació.",
     "quote": "Els reptes que treballarem són seus. L'impacte, de tots.",
-    "logo_alt": "Fundació Civio"
+    "logo_alt": "Fundació Civio",
+    "venue_title": "Seu: 42Barcelona",
+    "venue_description": "Escola de programació de Fundació Telefònica. Comunitat d'aprenentatge entre iguals, oberta 24/7.",
+    "supporter_title": "Suport: Software Crafters BCN",
+    "supporter_description": "Comunitat de desenvolupadors apasionats per l'artesania del codi i les bones pràctiques."
   },
   "HowItWorks": {
     "eyebrow": "Què obtens?",
@@ -57,7 +61,8 @@
     "benefit_4": "Showcase de solucions ambicioses construïdes amb IA.",
     "benefit_5": "Comunitat de persones que volen construir coses que importin.",
     "who_title": "Per a qui és?",
-    "who_description": "Per a desenvolupadors, product managers i dissenyadors. No importa la teva experiència, el que importa és la teva actitud. think · build · help"
+    "who_description": "Per a desenvolupadors, product managers i dissenyadors. No importa la teva experiència, el que importa és la teva actitud.",
+    "who_tagline": "think · build · help"
   },
   "FAQ": {
     "eyebrow": "Preguntes freqüents",
@@ -93,6 +98,6 @@
     "register_cta": "Properament et podràs registrar →",
     "coming_soon": "Proximament s'obrirà el registre",
     "year": "2026",
-    "venue": "42 Barcelona"
+    "collaboration_prefix": "En col·laboració amb"
   }
 }

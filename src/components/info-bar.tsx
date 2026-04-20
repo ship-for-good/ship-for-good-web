@@ -18,7 +18,7 @@ export function InfoBar() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8 }}
-      className="max-w-6xl mx-auto px-6 py-16"
+      className="max-w-6xl mx-auto px-6 py-16 -mt-16"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 border border-border rounded-2xl divide-y sm:divide-y-0 sm:divide-x divide-border">
         {items.map((item) => (

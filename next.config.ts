@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  redirects: async () => [
+    {
+      source: "/",
+      destination: "/es",
+      permanent: false,
+    },
+  ],
 };
 
 export default withNextIntl(nextConfig);

@@ -41,8 +41,17 @@ export function Footer() {
             · Barcelona, {t("year")}
           </p>
           <p>
+            {t("collaboration_prefix")}{" "}
             <a href="https://www.42barcelona.com/es/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-              {t("venue")}
+              42 Barcelona
+            </a>
+            {", "}
+            <a href="https://civio.es/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+              Fundación Civio
+            </a>
+            {" and "}
+            <a href="https://softwarecrafters.barcelona/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+              Software Crafters BCN
             </a>
           </p>
         </div>
