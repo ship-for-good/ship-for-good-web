@@ -7,6 +7,7 @@ const REGISTER_URL = "#"; // TODO: replace with registration URL when available
 
 export function Footer() {
   const t = useTranslations("Footer");
+  const tHero = useTranslations("Hero");
 
   return (
     <footer className="py-24 sm:py-32">
@@ -27,7 +28,7 @@ export function Footer() {
 
           <button
             disabled
-            title={t("coming_soon")}
+            title={tHero("coming_soon")}
             className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {t("register_cta")}

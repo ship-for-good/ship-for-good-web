@@ -12,6 +12,7 @@ const locales: Locale[] = ["es", "ca", "en"];
 
 export function Navbar() {
   const t = useTranslations("Navbar");
+  const tHero = useTranslations("Hero");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
 
@@ -75,7 +76,7 @@ export function Navbar() {
 
           <button
             disabled
-            title={t("coming_soon")}
+            title={tHero("coming_soon")}
             className="text-sm font-medium bg-accent text-white px-4 py-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {t("register")}
