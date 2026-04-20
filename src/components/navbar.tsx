@@ -73,12 +73,13 @@ export function Navbar() {
             })}
           </div>
 
-          <a
-            href={REGISTER_URL}
-            className="text-sm font-medium bg-accent text-white px-4 py-2 rounded-full hover:bg-accent-hover transition-colors"
+          <button
+            disabled
+            title={t("coming_soon")}
+            className="text-sm font-medium bg-accent text-white px-4 py-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {t("register")}
-          </a>
+          </button>
         </div>
       </div>
     </motion.nav>

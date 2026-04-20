@@ -25,12 +25,13 @@ export function Footer() {
             {t("closing")}
           </p>
 
-          <a
-            href={REGISTER_URL}
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-accent-hover transition-colors"
+          <button
+            disabled
+            title={t("coming_soon")}
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {t("register_cta")}
-          </a>
+          </button>
         </motion.div>
 
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground-muted">
@@ -38,7 +39,11 @@ export function Footer() {
             <span className="font-pixel text-foreground text-sm">Ship For Good</span>{" "}
             · Barcelona, {t("year")}
           </p>
-          <p>{t("venue")}</p>
+          <p>
+            <a href="https://www.42barcelona.com/es/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+              {t("venue")}
+            </a>
+          </p>
         </div>
       </div>
     </footer>

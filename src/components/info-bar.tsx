@@ -8,7 +8,7 @@ export function InfoBar() {
 
   const items = [
     { label: t("whenLabel"), value: t("whenValue") },
-    { label: t("whereLabel"), value: t("whereValue") },
+    { label: t("whereLabel"), value: t("whereValue"), href: "https://www.42barcelona.com/es/" },
     { label: t("formatLabel"), value: t("formatValue") },
   ];
 
@@ -26,7 +26,13 @@ export function InfoBar() {
             <p className="text-xs uppercase tracking-widest text-foreground-muted mb-2">
               {item.label}
             </p>
-            <p className="text-sm font-medium">{item.value}</p>
+            <p className="text-sm font-medium">
+              {item.href ? (
+                <a href={item.href} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  {item.value}
+                </a>
+              ) : item.value}
+            </p>
           </div>
         ))}
       </div>
