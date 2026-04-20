@@ -25,13 +25,13 @@ jobs:
       - run: pnpm install
       - run: pnpm run build
 
-      - name: Copy build to docs folder
-        run: rm -rf docs && cp -r out docs
+      - name: Deploy to root
+        run: cp -r out/* .
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs
+          git add -A
           git commit -m "chore: update site build [skip ci]" || true
           git push
