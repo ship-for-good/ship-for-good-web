@@ -43,9 +43,6 @@ export function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-xs uppercase tracking-widest text-accent mb-3">
-            {t("eyebrow")}
-          </p>
           <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
             {t("title")}
           </h2>

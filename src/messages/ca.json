@@ -17,7 +17,7 @@
   },
   "Hero": {
     "headline": "No és una altra hackathon. És la primera que es construeix per a qui realment ho necessita.",
-    "subheadline": "Devs, Product Managers i Designers treballant junts per crear solucions reals per a equips amb impacte. Sense premis. Sense fum. Només impacte.",
+    "subheadline": "Devs, Product Managers i Designers treballant junts per crear solucions reals. Sense premis. Sense fum. Només impacte.",
     "tagline": "think · build · help",
     "tags": "product · IA · people",
     "cta": "Vull construir alguna cosa que ajudi (Molt properament)",
@@ -36,20 +36,21 @@
     "title": "Dos dies, una missió",
     "day1_title": "Divendres 29 de maig",
     "day1_time": "18:00 – 21:00",
-    "day1_description": "Civio presenta els reptes reals sobre els quals treballar. Es formen equips (pots venir amb el teu o unir-te a un). Primeres solucions. Networking i copes.",
+    "day1_description": "Civio presenta els reptes reals sobre els quals treballar. Es formen equips (pots venir amb el teu o unir-te a un). Primers sketches i networking.",
     "day2_title": "Dissabte 30 de maig",
     "day2_time": "9:00 – 21:00",
     "day2_description": "Jornada completa de treball: dev, disseny i producte en paral·lel. Xerrades per perfil durant el dia. Mentoring continu per desbloquejar i avançar. Showcase final amb les solucions més ambicioses construïdes amb IA."
   },
   "CivioSection": {
-    "title": "Partner: Fundació Civio",
-    "description": "<civio>Fundació Civio</civio> és una fundació independent que vetlla pel poder públic, combat l'opacitat institucional i utilitza el periodisme, la tecnologia i les dades obertes per donar als ciutadans accés a la informació.",
+    "title": "Ens ajuden",
+    "civio_title": "Fundació Civio",
+    "civio_alt": "Fundació Civio",
+    "civio_description": "<civio>Fundació Civio</civio> és una fundació independent que vetlla pel poder públic, combat l'opacitat institucional i utilitza el periodisme, la tecnologia i les dades obertes per donar als ciutadans accés a la informació.",
     "quote": "Els reptes que treballarem són seus. L'impacte, de tots.",
-    "logo_alt": "Fundació Civio",
-    "venue_title": "Seu: 42Barcelona",
-    "venue_description": "Escola de programació de Fundació Telefònica. Comunitat d'aprenentatge entre iguals, oberta 24/7.",
-    "supporter_title": "Suport: Software Crafters BCN",
-    "supporter_description": "Comunitat de desenvolupadors apasionats per l'artesania del codi i les bones pràctiques."
+    "venue_title": "42Barcelona",
+    "venue_description": "Escola de programació de Fundació Telefònica amb un model innovador basat en aprenentatge entre iguals. Una comunitat global d'estudiants i professionals de la tecnologia que promou el creixement personal i professional mitjançant l'excel·lència tècnica.",
+    "supporter_title": "Software Crafters BCN",
+    "supporter_description": "Comunitat de desenvolupadors apasionats per l'artesania del codi, les bones pràctiques d'enginyeria i el creixement professional continu. Promoem l'excel·lència tècnica, l'aprenentatge col·laboratiu i la construcció de programari de qualitat."
   },
   "HowItWorks": {
     "eyebrow": "Què obtens?",
@@ -61,7 +62,7 @@
     "benefit_4": "Showcase de solucions ambicioses construïdes amb IA.",
     "benefit_5": "Comunitat de persones que volen construir coses que importin.",
     "who_title": "Per a qui és?",
-    "who_description": "Per a desenvolupadors, product managers i dissenyadors. No importa la teva experiència, el que importa és la teva actitud.",
+    "who_description": "Per a desenvolupadors, product managers i dissenyadors de qualsevol nivell: estudiants, juniors o seniors. El que importa és la teva actitud.",
     "who_tagline": "think · build · help"
   },
   "FAQ": {
@@ -90,6 +91,14 @@
     "faq6": {
       "question": "Necessito assistir els dos dies?",
       "answer": "Idealment sí."
+    },
+    "faq7": {
+      "question": "Habrà mentors i xerrades?",
+      "answer": "Sí. Habrà mentoring continu per desbloquejar problemes i avançar. A més, xerrades específiques per a devs, PMs i dissenyadors durant l'esdeveniment."
+    },
+    "faq8": {
+      "question": "Què passa amb la meva idea si no la rematem?",
+      "answer": "Podràs seguir treballant en ella després. L'objectiu és que tingui vida més enllà de l'esdeveniment."
     }
   },
   "Footer": {
@@ -98,6 +107,7 @@
     "register_cta": "Properament et podràs registrar →",
     "coming_soon": "Proximament s'obrirà el registre",
     "year": "2026",
-    "collaboration_prefix": "En col·laboració amb"
+    "collaboration_prefix": "En col·laboració amb",
+    "collaboration_and": "i"
   }
 }

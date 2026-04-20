@@ -49,7 +49,7 @@ export function Footer() {
             <a href="https://civio.es/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               Fundación Civio
             </a>
-            {" and "}
+            {` ${t("collaboration_and")} `}
             <a href="https://softwarecrafters.barcelona/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               Software Crafters BCN
             </a>

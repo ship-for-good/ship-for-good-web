@@ -55,12 +55,6 @@ export function Hero() {
           {t("subheadline")}
         </motion.p>
 
-        <motion.div variants={fadeUp} className="mb-10">
-          <span className="text-xs uppercase tracking-widest text-foreground-muted">
-            {t("tags")}
-          </span>
-        </motion.div>
-
         <motion.div variants={fadeUp}>
           <button
             disabled
