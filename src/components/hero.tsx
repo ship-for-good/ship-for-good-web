@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 const partners = [
   { name: "Civio", logo: "/civio-logo.svg", url: "https://civio.es/", width: 150 },
-  { name: "42Barcelona", logo: "/42barcelona-full-logo.svg", url: "https://www.42barcelona.com/es/", width: 140 },
+  { name: "42Barcelona", logo: "/42-barcelona-logo.png", url: "https://www.42barcelona.com/es/", width: 150 },
   { name: "Software Crafters BCN", logo: "/sbcn-logo.svg", url: "https://softwarecrafters.barcelona/", width: 80 },
 ];
 
