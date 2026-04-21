@@ -8,7 +8,7 @@ export function PartnershipsSection() {
   const t = useTranslations("CivioSection");
 
   return (
-    <section className="py-24 sm:py-32">
+    <section className="py-24 sm:py-32 bg-background-alt">
       <div className="max-w-6xl mx-auto px-6 space-y-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export function PartnershipsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row items-center gap-12 border border-border rounded-2xl p-10 sm:p-14"
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
         >
           <div className="shrink-0 md:w-[160px] flex items-center justify-center">
             <a href="https://civio.es/" target="_blank" rel="noopener noreferrer">
@@ -67,7 +67,7 @@ export function PartnershipsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex flex-col md:flex-row items-center gap-12 border border-border rounded-2xl p-10 sm:p-14"
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
         >
           <div className="shrink-0 md:w-[160px] flex items-center justify-center">
             <a href="https://www.42barcelona.com/es/" target="_blank" rel="noopener noreferrer">
@@ -95,7 +95,7 @@ export function PartnershipsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-col md:flex-row items-center gap-12 border border-border rounded-2xl p-10 sm:p-14"
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
         >
           <div className="shrink-0 md:w-[160px] flex items-center justify-center">
             <a href="https://softwarecrafters.barcelona/" target="_blank" rel="noopener noreferrer">

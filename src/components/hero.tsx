@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 const partners = [
-  { name: "Civio", logo: "/civio-logo.svg", url: "https://civio.es/", width: 130 },
-  { name: "42Barcelona", logo: "/42barcelona-full-logo.svg", url: "https://www.42barcelona.com/es/", width: 120 },
-  { name: "Software Crafters BCN", logo: "/sbcn-logo.svg", url: "https://softwarecrafters.barcelona/", width: 65 },
+  { name: "Civio", logo: "/civio-logo.svg", url: "https://civio.es/", width: 150 },
+  { name: "42Barcelona", logo: "/42barcelona-full-logo.svg", url: "https://www.42barcelona.com/es/", width: 140 },
+  { name: "Software Crafters BCN", logo: "/sbcn-logo.svg", url: "https://softwarecrafters.barcelona/", width: 80 },
 ];
 
 const container = {

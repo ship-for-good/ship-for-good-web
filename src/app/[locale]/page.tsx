@@ -14,8 +14,8 @@ export default function Home() {
       <main>
         <Hero />
         <InfoBar />
-        <HowItWorks />
         <Schedule />
+        <HowItWorks />
         <PartnershipsSection />
         <FAQ />
       </main>

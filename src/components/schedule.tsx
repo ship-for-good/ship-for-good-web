@@ -29,12 +29,21 @@ export function Schedule() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-xs uppercase tracking-widest text-accent mb-3">
-            {t("eyebrow")}
-          </p>
           <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
             {t("title")}
           </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mb-16"
+        >
+          <p className="text-sm text-foreground-muted leading-relaxed max-w-4xl">
+            {t("intro_description")}
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
