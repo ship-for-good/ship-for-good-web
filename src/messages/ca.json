@@ -53,7 +53,11 @@
     "venue_title": "42Barcelona",
     "venue_description": "Escola de programació de Fundació Telefònica amb un model innovador basat en aprenentatge entre iguals. Una comunitat global d'estudiants i professionals de la tecnologia que promou el creixement personal i professional mitjançant l'excel·lència tècnica.",
     "supporter_title": "Software Crafters Barcelona",
-    "supporter_description": "Comunitat apassionada per l'artesania del codi, les bones pràctiques d'enginyeria i el creixement professional continu. Promovem l'excel·lència tècnica, l'aprenentatge col·laboratiu i la construcció de programari de qualitat."
+    "supporter_description": "Comunitat apassionada per l'artesania del codi, les bones pràctiques d'enginyeria i el creixement professional continu. Promovem l'excel·lència tècnica, l'aprenentatge col·laboratiu i la construcció de programari de qualitat.",
+    "lovable_title": "Lovable",
+    "lovable_description": "Plataforma de desenvolupament assistit per IA que accelera la creació de productes digitals des de la idea fins a una primera versió funcional.",
+    "cursor_title": "Cursor",
+    "cursor_description": "Editor de codi potenciat per IA que ajuda els equips a construir programari més ràpid mantenint el context complet del projecte."
   },
   "HowItWorks": {
     "eyebrow": "Què obtens?",

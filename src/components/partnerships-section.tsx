@@ -100,7 +100,7 @@ export function PartnershipsSection() {
           <div className="shrink-0 md:w-[160px] flex items-center justify-center">
             <a href="https://softwarecrafters.barcelona/" target="_blank" rel="noopener noreferrer">
               <img
-                src="/sbcn-logo.svg"
+                src={asset("/sbcn-logo.svg")}
                 alt="Software Crafters Barcelona"
                 style={{ width: "120px", height: "auto" }}
               />
@@ -114,6 +114,62 @@ export function PartnershipsSection() {
             </p>
             <p className="text-base text-foreground-muted leading-relaxed">
               {t("supporter_description")}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
+        >
+          <div className="shrink-0 md:w-[160px] flex items-center justify-center">
+            <a href="https://lovable.dev/brand" target="_blank" rel="noopener noreferrer">
+              <img
+                src={asset("/lovable-logo.png")}
+                alt="Lovable"
+                style={{ width: "140px", height: "auto" }}
+              />
+            </a>
+          </div>
+          <div className="flex-1">
+            <p className="text-xs uppercase tracking-widest text-accent mb-4">
+              <a href="https://lovable.dev/brand" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {t("lovable_title")}
+              </a>
+            </p>
+            <p className="text-base text-foreground-muted leading-relaxed">
+              {t("lovable_description")}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
+        >
+          <div className="shrink-0 md:w-[160px] flex items-center justify-center">
+            <a href="https://cursor.com/brand" target="_blank" rel="noopener noreferrer">
+              <img
+                src={asset("/cursor-logo.svg")}
+                alt="Cursor"
+                style={{ width: "140px", height: "auto" }}
+              />
+            </a>
+          </div>
+          <div className="flex-1">
+            <p className="text-xs uppercase tracking-widest text-accent mb-4">
+              <a href="https://cursor.com/brand" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {t("cursor_title")}
+              </a>
+            </p>
+            <p className="text-base text-foreground-muted leading-relaxed">
+              {t("cursor_description")}
             </p>
           </div>
         </motion.div>

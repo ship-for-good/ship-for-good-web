@@ -53,7 +53,11 @@
     "venue_title": "42Barcelona",
     "venue_description": "A coding school by Fundación Telefónica with an innovative peer-to-peer learning model. A global community of students and technology professionals that fosters personal and professional growth through technical excellence.",
     "supporter_title": "Software Crafters BCN",
-    "supporter_description": "A community of developers passionate about code craftsmanship, engineering best practices, and continuous professional growth. We promote technical excellence, collaborative learning, and the construction of quality software."
+    "supporter_description": "A community of developers passionate about code craftsmanship, engineering best practices, and continuous professional growth. We promote technical excellence, collaborative learning, and the construction of quality software.",
+    "lovable_title": "Lovable",
+    "lovable_description": "AI-assisted development platform that speeds up building digital products from idea to first working version.",
+    "cursor_title": "Cursor",
+    "cursor_description": "AI-powered code editor that helps teams build software faster while keeping full project context."
   },
   "HowItWorks": {
     "eyebrow": "What do you get?",
