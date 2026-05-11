@@ -57,7 +57,9 @@
     "lovable_title": "Lovable",
     "lovable_description": "AI-assisted development platform that speeds up building digital products from idea to first working version.",
     "cursor_title": "Cursor",
-    "cursor_description": "AI-powered code editor that helps teams build software faster while keeping full project context."
+    "cursor_description": "AI-powered code editor that helps teams build software faster while keeping full project context.",
+    "plain_concepts_title": "Plain Concepts",
+    "plain_concepts_description": "Technology consultancy specialising in digital transformation, software development, and artificial intelligence, with over 25 years helping companies innovate with real impact."
   },
   "HowItWorks": {
     "eyebrow": "What do you get?",
