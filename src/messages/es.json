@@ -10,6 +10,7 @@
     "faq": "Preguntas",
     "codeOfConduct": "Código de conducta",
     "register": "Regístrate",
+    "registrationsClosed": "Registro cerrado",
     "language": {
       "es": "ES",
       "ca": "CA",
@@ -23,7 +24,11 @@
     "tagline": "think · build · help",
     "tags": "product · IA · people",
     "cta": "Regístrate ahora →",
-    "coming_soon": "Regístrate ahora"
+    "coming_soon": "Regístrate ahora",
+    "registrationsClosed": "El registro está cerrado",
+    "registrationsClosedSubtext": "¡Gracias a todos los que os habéis apuntado! Nos vemos en {days} días.",
+    "registrationsClosedSubtextToday": "¡Gracias a todos los que os habéis apuntado! Nos vemos hoy.",
+    "registrationsClosedSubtextLive": "¡Gracias a todos los que os habéis apuntado! Ya estamos aquí."
   },
   "InfoBar": {
     "whenLabel": "Cuándo",
@@ -154,9 +159,12 @@
   },
   "Footer": {
     "tagline": "think · build · help",
-    "closing": "Regístrate y construyamos algo con impacto social.",
+    "closing": "Quedan {days} días para construir algo con impacto social.",
+    "closingToday": "¡Hoy es el dia! A construir algo con impacto social.",
+    "closingLive": "¡Estamos construyendo algo con impacto social!",
     "register_cta": "Regístrate ahora →",
     "coming_soon": "Regístrate ahora",
+    "registrationsClosed": "El registro está cerrado",
     "year": "2026",
     "collaboration_prefix": "En colaboración con",
     "collaboration_and": "y"

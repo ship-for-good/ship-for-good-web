@@ -96,14 +96,9 @@ export function Navbar() {
             })}
           </div>
 
-          <a
-            href="https://form.typeform.com/to/IAV9ttyy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium bg-accent text-white px-4 py-2 rounded-full hover:bg-accent-hover transition-colors"
-          >
-            {t("register")}
-          </a>
+          <span className="text-sm font-medium bg-foreground-muted/20 text-foreground-muted px-4 py-2 rounded-full cursor-default">
+            {t("registrationsClosed")}
+          </span>
         </div>
       </div>
     </motion.nav>

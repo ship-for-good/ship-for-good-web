@@ -10,6 +10,7 @@
     "faq": "Preguntes",
     "codeOfConduct": "Codi de conducta",
     "register": "Registra't",
+    "registrationsClosed": "Registre tancat",
     "language": {
       "es": "ES",
       "ca": "CA",
@@ -23,7 +24,11 @@
     "tagline": "think · build · help",
     "tags": "product · IA · people",
     "cta": "Registra't ara →",
-    "coming_soon": "Registra't ara"
+    "coming_soon": "Registra't ara",
+    "registrationsClosed": "El registre està tancat",
+    "registrationsClosedSubtext": "Gràcies a tots els que us heu apuntat! Ens veiem en {days} dies.",
+    "registrationsClosedSubtextToday": "Gràcies a tots els que us heu apuntat! Ens veiem avui.",
+    "registrationsClosedSubtextLive": "Gràcies a tots els que us heu apuntat! Ja som aquí."
   },
   "InfoBar": {
     "whenLabel": "Quan",
@@ -154,9 +159,12 @@
   },
   "Footer": {
     "tagline": "think · build · help",
-    "closing": "Registra't i construïm alguna cosa amb impacte social.",
+    "closing": "Queden {days} dies per construir alguna cosa amb impacte social.",
+    "closingToday": "Avui és el dia! A construir alguna cosa amb impacte social.",
+    "closingLive": "Estem construint alguna cosa amb impacte social!",
     "register_cta": "Registra't ara →",
     "coming_soon": "Registra't ara",
+    "registrationsClosed": "El registre està tancat",
     "year": "2026",
     "collaboration_prefix": "En col·laboració amb",
     "collaboration_and": "i"

@@ -3,6 +3,9 @@
 import { asset } from "@/lib/asset";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+
+const EVENT_DATE = new Date("2026-05-29T00:00:00");
 
 const partners = [
   { name: "Civio", logo: "/civio-logo.svg", url: "https://civio.es/", width: 150 },
@@ -31,6 +34,15 @@ const fadeUp = {
 
 export function Hero() {
   const t = useTranslations("Hero");
+
+  const subtext = useMemo(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const days = Math.ceil((EVENT_DATE.getTime() - today.getTime()) / 86400000);
+    if (days > 0) return t("registrationsClosedSubtext", { days });
+    if (days === 0) return t("registrationsClosedSubtextToday");
+    return t("registrationsClosedSubtextLive");
+  }, [t]);
 
   return (
     <section className="min-h-[90vh] flex items-center justify-center pt-16">
@@ -65,15 +77,13 @@ export function Hero() {
           {t("subheadline")}
         </motion.p>
 
-        <motion.div variants={fadeUp}>
-          <a
-            href="https://form.typeform.com/to/IAV9ttyy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-accent-hover transition-colors"
-          >
-            {t("cta")}
-          </a>
+        <motion.div variants={fadeUp} className="flex flex-col items-center gap-3">
+          <span className="inline-flex items-center gap-2 bg-foreground-muted/15 text-foreground-muted px-8 py-3.5 rounded-full text-sm font-medium cursor-default">
+            {t("registrationsClosed")}
+          </span>
+          <p className="text-sm text-foreground-muted/80 max-w-sm">
+            {subtext}
+          </p>
         </motion.div>
 
         <motion.div

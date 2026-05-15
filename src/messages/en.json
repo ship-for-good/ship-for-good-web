@@ -10,6 +10,7 @@
     "faq": "FAQ",
     "codeOfConduct": "Code of conduct",
     "register": "Register",
+    "registrationsClosed": "Registrations closed",
     "language": {
       "es": "ES",
       "ca": "CA",
@@ -23,7 +24,11 @@
     "tagline": "think · build · help",
     "tags": "product · AI · people",
     "cta": "Register now →",
-    "coming_soon": "Register now"
+    "coming_soon": "Register now",
+    "registrationsClosed": "Registrations are now closed",
+    "registrationsClosedSubtext": "Thank you to everyone who signed up! See you in {days} days.",
+    "registrationsClosedSubtextToday": "Thank you to everyone who signed up! See you today.",
+    "registrationsClosedSubtextLive": "Thank you to everyone who signed up! We're here."
   },
   "InfoBar": {
     "whenLabel": "When",
@@ -154,9 +159,12 @@
   },
   "Footer": {
     "tagline": "think · build · help",
-    "closing": "Sign up and let's build something with social impact.",
+    "closing": "{days} days left to build something with social impact.",
+    "closingToday": "Today is the day! Let's build something with social impact.",
+    "closingLive": "We're building something with social impact!",
     "register_cta": "Register now →",
     "coming_soon": "Register now",
+    "registrationsClosed": "Registrations are now closed",
     "year": "2026",
     "collaboration_prefix": "In collaboration with",
     "collaboration_and": "and"

@@ -2,9 +2,21 @@
 
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+
+const EVENT_DATE = new Date("2026-05-29T00:00:00");
 
 export function Footer() {
   const t = useTranslations("Footer");
+
+  const closingText = useMemo(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const days = Math.ceil((EVENT_DATE.getTime() - today.getTime()) / 86400000);
+    if (days > 0) return t("closing", { days });
+    if (days === 0) return t("closingToday");
+    return t("closingLive");
+  }, [t]);
   return (
     <footer className="py-24 sm:py-32">
       <div className="max-w-6xl mx-auto px-6">
@@ -19,17 +31,12 @@ export function Footer() {
             {t("tagline")}
           </p>
           <p className="font-pixel text-3xl sm:text-4xl md:text-5xl tracking-tight mb-8 max-w-2xl mx-auto">
-            {t("closing")}
+            {closingText}
           </p>
 
-          <a
-            href="https://form.typeform.com/to/IAV9ttyy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-accent-hover transition-colors"
-          >
-            {t("register_cta")}
-          </a>
+          <span className="inline-flex items-center gap-2 bg-foreground-muted/15 text-foreground-muted px-8 py-3.5 rounded-full text-sm font-medium cursor-default">
+            {t("registrationsClosed")}
+          </span>
         </motion.div>
 
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground-muted">
