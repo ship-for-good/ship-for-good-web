@@ -238,22 +238,22 @@ export function PartnershipsSection() {
           className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
         >
           <div className="shrink-0 md:w-[160px] flex items-center justify-center">
-            <a href="https://sirviendocodigo.com/sirviendo-codigo/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.nextdigital.es/" target="_blank" rel="noopener noreferrer">
               <img
-                src={asset("/sirviendo-codigo-logo.png")}
-                alt="Sirviendo Código"
-                style={{ width: "160px", height: "auto", filter: "brightness(0)" }}
+                src={asset("/next-digital-logo.svg")}
+                alt="Next Digital"
+                style={{ width: "160px", height: "auto" }}
               />
             </a>
           </div>
           <div className="flex-1">
             <p className="text-xs uppercase tracking-widest text-accent mb-4">
-              <a href="https://sirviendocodigo.com/sirviendo-codigo/" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                {t("sirviendo_codigo_title")}
+              <a href="https://www.nextdigital.es/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {t("next_digital_title")}
               </a>
             </p>
             <p className="text-base text-foreground-muted leading-relaxed">
-              {t("sirviendo_codigo_description")}
+              {t("next_digital_description")}
             </p>
           </div>
         </motion.div>
