@@ -68,7 +68,14 @@
     "qualityclouds_title": "QualityClouds",
     "qualityclouds_description": "Plataforma de análisis continuo de calidad de código que ayuda a equipos a detectar deuda técnica, vulnerabilidades y problemas de mantenibilidad en su software.",
     "next_digital_title": "Next Digital",
-    "next_digital_description": "Agencia digital especializada en transformación digital, estrategia y desarrollo de productos digitales que ayuda a empresas a crecer en el entorno online."
+    "next_digital_description": "Agencia digital especializada en transformación digital, estrategia y desarrollo de productos digitales que ayuda a empresas a crecer en el entorno online.",
+    "manfred_title": "Manfred",
+    "manfred_description": "Plataforma de talento tech con un modelo transparente y orientado a la comunidad. Conectan a profesionales de tecnología con empresas que comparten sus valores.",
+    "falca_title": "Falca",
+    "falca_description": "Productora de servicios para rodajes internacionales en España y Portugal. Coordinación ágil, comunicación directa y ejecución fiable para que los equipos creativos se centren en lo importante.",
+    "sponsors_subtitle": "Sponsors",
+    "apoyan_subtitle": "Apoyan",
+    "organizan_subtitle": "Organizan"
   },
   "HowItWorks": {
     "eyebrow": "¿Qué obtienes?",
