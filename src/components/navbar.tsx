@@ -9,7 +9,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 const locales: Locale[] = ["es", "ca", "en"];
 
-const NAV_SECTIONS = ["schedule", "how-it-works", "faq", "code-of-conduct"] as const;
+const NAV_SECTIONS = ["schedule", "how-it-works", "nos-ayudan", "faq", "code-of-conduct"] as const;
 
 export function Navbar() {
   const t = useTranslations("Navbar");
@@ -67,6 +67,9 @@ export function Navbar() {
           </a>
           <a href="#how-it-works" className={navLinkClass("how-it-works")}>
             {t("howItWorks")}
+          </a>
+          <a href="#nos-ayudan" className={navLinkClass("nos-ayudan")}>
+            {t("partners")}
           </a>
           <a href="#faq" className={navLinkClass("faq")}>
             {t("faq")}

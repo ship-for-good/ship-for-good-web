@@ -103,38 +103,51 @@ export function PartnershipsSection() {
   const t = useTranslations("CivioSection");
 
   return (
-    <section className="py-24 sm:py-32 bg-background-alt">
-      <div className="max-w-6xl mx-auto px-6 space-y-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
-          <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
-            {t("title")}
-          </h2>
-        </motion.div>
+    <>
+      <section id="nos-ayudan" className="py-24 sm:py-32 bg-background-alt">
+        <div className="max-w-6xl mx-auto px-6 space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="mb-8"
+          >
+            <h2 className="font-pixel text-4xl sm:text-5xl tracking-tight">
+              {t("title")}
+            </h2>
+          </motion.div>
 
-        <Subsection label={t("sponsors_subtitle")}>
-          <LogoGrid logos={[
-            { href: "https://www.getmanfred.com/", src: asset("/manfred-logo.svg"), alt: "Manfred", width: 140 },
-            { href: "https://qualityclouds.ai/", src: asset("/qualityclouds-logo.webp"), alt: "QualityClouds", width: 200 },
-            { href: "https://www.plainconcepts.com/", src: asset("/plain-concepts-logo.svg"), alt: "Plain Concepts", width: 130 },
-            { href: "https://www.nextdigital.es/", src: asset("/next-digital-logo.svg"), alt: "Next Digital", width: 180 },
-          ]} />
-        </Subsection>
+          <Subsection label={t("sponsors_subtitle")}>
+            <LogoGrid logos={[
+              { href: "https://www.getmanfred.com/", src: asset("/manfred-logo.svg"), alt: "Manfred", width: 140 },
+              { href: "https://qualityclouds.ai/", src: asset("/qualityclouds-logo.webp"), alt: "QualityClouds", width: 200 },
+              { href: "https://www.plainconcepts.com/", src: asset("/plain-concepts-logo.svg"), alt: "Plain Concepts", width: 130 },
+              { href: "https://www.nextdigital.es/", src: asset("/next-digital-logo.svg"), alt: "Next Digital", width: 180 },
+            ]} />
+          </Subsection>
 
-        <Subsection label={t("apoyan_subtitle")} delay={0.1}>
-          <LogoGrid logos={[
-            { href: "https://lovable.dev/", src: asset("/lovable-logo.png"), alt: "Lovable", width: 130 },
-            { href: "https://cursor.com/", src: asset("/cursor-logo.svg"), alt: "Cursor", width: 130 },
-            { href: "https://falca.com/", src: asset("/falca-logo.jpg"), alt: "Falca", width: 130 },
-          ]} delay={0.1} />
-        </Subsection>
+          <Subsection label={t("apoyan_subtitle")} delay={0.1}>
+            <LogoGrid logos={[
+              { href: "https://lovable.dev/", src: asset("/lovable-logo.png"), alt: "Lovable", width: 130 },
+              { href: "https://cursor.com/", src: asset("/cursor-logo.svg"), alt: "Cursor", width: 130 },
+              { href: "https://falca.com/", src: asset("/falca-logo.jpg"), alt: "Falca", width: 130 },
+            ]} />
+          </Subsection>
+        </div>
+      </section>
 
-        <Subsection label={t("organizan_subtitle")} delay={0.1}>
+      <section className="py-24 sm:py-32 bg-background">
+        <div className="max-w-6xl mx-auto px-6 space-y-8">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="font-pixel text-4xl sm:text-5xl tracking-tight"
+          >
+            {t("organizan_subtitle")}
+          </motion.h2>
           <PartnerCard
             href="https://civio.es/"
             logoSrc={asset("/civio-logo.svg")}
@@ -168,8 +181,8 @@ export function PartnershipsSection() {
             description={t("supporter_description")}
             delay={0.2}
           />
-        </Subsection>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }

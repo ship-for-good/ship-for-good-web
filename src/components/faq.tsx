@@ -63,7 +63,7 @@ export function FAQ() {
   }));
 
   return (
-    <section id="faq" className="py-24 sm:py-32">
+    <section id="faq" className="py-24 sm:py-32 bg-background-alt">
       <div className="max-w-3xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
