@@ -242,7 +242,7 @@ export function PartnershipsSection() {
               <img
                 src={asset("/next-digital-logo.svg")}
                 alt="Next Digital"
-                style={{ width: "160px", height: "auto" }}
+                style={{ width: "200px", height: "auto" }}
               />
             </a>
           </div>
