@@ -64,7 +64,11 @@
     "cursor_title": "Cursor",
     "cursor_description": "AI-powered code editor that helps teams build software faster while keeping full project context.",
     "plain_concepts_title": "Plain Concepts",
-    "plain_concepts_description": "Technology consultancy specialising in digital transformation, software development, and artificial intelligence, with over 25 years helping companies innovate with real impact."
+    "plain_concepts_description": "Technology consultancy specialising in digital transformation, software development, and artificial intelligence, with over 25 years helping companies innovate with real impact.",
+    "qualityclouds_title": "QualityClouds",
+    "qualityclouds_description": "Continuous code quality analysis platform that helps teams detect technical debt, vulnerabilities, and maintainability issues in their software.",
+    "sirviendo_codigo_title": "Sirviendo Código",
+    "sirviendo_codigo_description": "Community and technology outreach space that fosters learning, collaboration, and professional growth in the software development ecosystem."
   },
   "HowItWorks": {
     "eyebrow": "What do you get?",

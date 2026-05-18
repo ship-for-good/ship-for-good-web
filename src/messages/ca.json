@@ -64,7 +64,11 @@
     "cursor_title": "Cursor",
     "cursor_description": "Editor de codi potenciat per IA que ajuda els equips a construir programari més ràpid mantenint el context complet del projecte.",
     "plain_concepts_title": "Plain Concepts",
-    "plain_concepts_description": "Consultora tecnològica especialitzada en transformació digital, desenvolupament de programari i intel·ligència artificial, amb més de 25 anys ajudant empreses a innovar amb impacte real."
+    "plain_concepts_description": "Consultora tecnològica especialitzada en transformació digital, desenvolupament de programari i intel·ligència artificial, amb més de 25 anys ajudant empreses a innovar amb impacte real.",
+    "qualityclouds_title": "QualityClouds",
+    "qualityclouds_description": "Plataforma d'anàlisi contínua de qualitat de codi que ajuda els equips a detectar deute tècnic, vulnerabilitats i problemes de mantenibilitat al seu programari.",
+    "sirviendo_codigo_title": "Sirviendo Código",
+    "sirviendo_codigo_description": "Comunitat i espai de divulgació tecnològica que fomenta l'aprenentatge, la col·laboració i el creixement professional en l'ecosistema de desenvolupament de programari."
   },
   "HowItWorks": {
     "eyebrow": "Què obtens?",

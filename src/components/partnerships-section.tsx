@@ -186,7 +186,7 @@ export function PartnershipsSection() {
               <img
                 src={asset("/plain-concepts-logo.svg")}
                 alt="Plain Concepts"
-                style={{ width: "180px", height: "auto" }}
+                style={{ width: "130px", height: "auto" }}
               />
             </a>
           </div>
@@ -198,6 +198,62 @@ export function PartnershipsSection() {
             </p>
             <p className="text-base text-foreground-muted leading-relaxed">
               {t("plain_concepts_description")}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
+        >
+          <div className="shrink-0 md:w-[160px] flex items-center justify-center">
+            <a href="https://qualityclouds.ai/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={asset("/qualityclouds-logo.webp")}
+                alt="QualityClouds"
+                style={{ width: "220px", height: "auto" }}
+              />
+            </a>
+          </div>
+          <div className="flex-1">
+            <p className="text-xs uppercase tracking-widest text-accent mb-4">
+              <a href="https://qualityclouds.ai/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {t("qualityclouds_title")}
+              </a>
+            </p>
+            <p className="text-base text-foreground-muted leading-relaxed">
+              {t("qualityclouds_description")}
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="flex flex-col md:flex-row items-center gap-12 bg-background border border-border rounded-2xl p-10 sm:p-14"
+        >
+          <div className="shrink-0 md:w-[160px] flex items-center justify-center">
+            <a href="https://sirviendocodigo.com/sirviendo-codigo/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={asset("/sirviendo-codigo-logo.png")}
+                alt="Sirviendo Código"
+                style={{ width: "160px", height: "auto", filter: "brightness(0)" }}
+              />
+            </a>
+          </div>
+          <div className="flex-1">
+            <p className="text-xs uppercase tracking-widest text-accent mb-4">
+              <a href="https://sirviendocodigo.com/sirviendo-codigo/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {t("sirviendo_codigo_title")}
+              </a>
+            </p>
+            <p className="text-base text-foreground-muted leading-relaxed">
+              {t("sirviendo_codigo_description")}
             </p>
           </div>
         </motion.div>
